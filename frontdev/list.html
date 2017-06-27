@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF -8">
+    <title>Demo HR</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="scripts/app.js"></script>
+</head>
+<body>
+<h1>Hr Employees List Page</h1>
+<div class="panel panel-default">
+    <div class="panel-heading description">
+        Employees list
+    </div>
+    <div class="panel-body">
+        <div>
+            <p>
+                <button onclick="showList()">Show List</button>
+            </p>
+        </div>
+        <div id="listcontainer">
+        </div>
+    </div>
+</div>
+<div>
+    <a href="index.html">Back to Home Page</a>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading description">
+        Add Employee
+    </div>
+    <div class="panel-body">
+        <p>
+            First Name: <input type="text" id="firstName"/>
+        </p>
+        <p>
+            Last Name: <input type="text" id="lastName"/>
+        </p>
+        <p>
+            Phone: <input type="text" id="phone"/>
+        </p>
+        <p>
+            Salary : <input type="number" id="salary"/>
+        </p>
+        <p>
+            <button onclick="addRefresh()">Add employee</button>
+        </p>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading description">
+        Total Salaries:
+    </div>
+    <div class="panel-body">
+        <p>
+            <button onclick="Sum()">Salaries</button> <div id="sum">
+        </p>
+    </div>
+
+
+        </div>
+
+    </div>
+<div class="panel panel-default">
+    <div class="panel-heading description">
+        Delete:
+    </div>
+    <div class="panel-body">
+        <p>
+            <button onclick="Erase()">Delete employee</button>
+        </p>
+    </div>
+
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading description">
+        Convert Salary:
+    </div>
+    <div class="panel-body">
+        <p>
+            <button onclick="Convert()">Convert</button>
+        </p>
+    </div>
+
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading description">
+        Sort by:
+    </div>
+    <div class="panel-body">
+        <p>
+            <input type="text" id="input">
+            <button onclick="Sort(parseInt(document.getElementById('input').value))">Sort</button>
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
